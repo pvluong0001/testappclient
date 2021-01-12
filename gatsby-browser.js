@@ -5,4 +5,5 @@
  */
 
 // You can delete this file if you're not using it
-import "./src/css/index.css"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./src/css/index.css";

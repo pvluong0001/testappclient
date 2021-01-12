@@ -5,9 +5,12 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@popperjs/core": "^2.6.0",
     "axios": "^0.21.1",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-postcss": "^3.5.0",
@@ -24,6 +27,7 @@
     "react-icons": "^4.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "prettier": "2.2.1",
     "tailwindcss": "^2.0.2"
   },

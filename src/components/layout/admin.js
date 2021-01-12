@@ -1,33 +1,24 @@
-import React from 'react';
-import {FaCog} from 'react-icons/fa';
-import DropDownBtn from '../share/DropDownBtn';
+import React from "react"
 
-export default function Layout(props) {
-  const userActions = [
-    {
-      name: 'Settings',
-      handler: '/settings'
-    }
-  ]
+// components
+import AdminNavbar from "@templates/Navbars/AdminNavbar"
+import Sidebar from "@templates/Sidebar/Sidebar"
+import HeaderStats from "@templates/Headers/HeaderStats"
+import FooterAdmin from "@templates/Footers/FooterAdmin"
 
+export default function Admin(props) {
   return (
-    <div>
-      <header className="bg-blue-200 p-4 flex flex-row-reverse">
-        <div>
-          <DropDownBtn
-            target={<FaCog className="cursor-pointer text-gray-600"/>}
-            actions={userActions}
-          />
-          <DropDownBtn
-            target={"Amazing"}
-            actions={userActions}
-          />
+    <>
+      <Sidebar />
+      <div className="relative md:ml-64 bg-gray-200">
+        <AdminNavbar />
+        {/* Header */}
+        <HeaderStats />
+        <div className="px-4 md:px-10 mx-auto w-full -m-24">
+          {props.children}
+          <FooterAdmin />
         </div>
-      </header>
-
-      <main>
-        {props.children}
-      </main>
-    </div>
+      </div>
+    </>
   )
 }

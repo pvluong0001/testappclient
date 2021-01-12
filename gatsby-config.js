@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -30,6 +32,17 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, 'src/components'),
+          "@templates": path.resolve(__dirname, 'src/components/template'),
+          "@assets": path.resolve(__dirname, 'src/components/assets'),
+        },
+        extensions: ["js"]
+      }
+    }
   ],
 }
