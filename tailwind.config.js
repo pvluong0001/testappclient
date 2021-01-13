@@ -5,16 +5,7 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: [
-      "./public/**/*.html",
-      "./public/*.html",
-      "./src/**/*.js",
-      "./src/*.js",
-      "./src/**/*.html",
-      "./src/*.html",
-      "./public/**/*.js",
-      "./public/*.js",
-    ],
+    content: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
     options: {
       whitelist: [],
     },
@@ -76,7 +67,7 @@ module.exports = {
       },
       backgroundSize: {
         full: "100$",
-      },
+      }
     },
   },
   variants: [

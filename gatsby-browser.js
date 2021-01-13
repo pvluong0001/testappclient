@@ -6,4 +6,5 @@
 
 // You can delete this file if you're not using it
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "./src/css/index.css";
+import "./src/css/tailwind.css";
+import "./src/css/app.css";
